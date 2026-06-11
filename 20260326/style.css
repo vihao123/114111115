@@ -1,0 +1,46 @@
+h1{
+    color: rgb(40, 163, 40);
+    background-color: rgb(70, 66, 19);
+}
+
+.author{
+    font-size: 0.5em;
+    color: rgb(102, 101, 101);
+}
+
+.section{
+    font-size: 1.3em;
+    line-height: 1.8;
+}
+
+.keyword{
+    font-size: 1.3em;
+    border: 1px double rgb(107, 119, 228);
+    padding: 10px;
+    text-align: center;
+    margin-right: 20px;
+    float: left;
+    width: 80px;
+    color: rgb(107, 119, 228);
+}
+
+.wac{
+    float: right;
+}
+
+.clear{
+    clear:both;
+}
+
+.extend{
+    border: 1px solid rgb(255, 150, 112);
+    padding: 5px;
+    text-align: left;
+    width: 400px;
+    border-radius: 20px;
+    font-size: 1.3em;
+}
+
+.pc{
+    width: 600px;
+}

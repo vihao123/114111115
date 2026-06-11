@@ -1,0 +1,220 @@
+body {
+    font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.header-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    /* Bạn có thể thay link ảnh sparkler của mình vào đây */
+    background-image: url('https://images.unsplash.com/photo-1546955121-d0ba64964e34?q=80&w=1000&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    padding: 30px;
+}
+
+h1 {
+    color: #4a6991;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.question {
+    margin-bottom: 40px;
+}
+
+.question-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    color: #4a6991;
+}
+
+.question-number {
+    margin-right: 10px;
+}
+
+.sub-text {
+    display: block;
+    font-size: 13px;
+    color: #9a99;
+    margin-bottom: 10px;
+}
+
+/* Input Text & Textarea */
+input[type="text"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #4a6991;
+    padding: 10px 0;
+    font-size: 16px;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #4a6991;
+    border-radius: 4px;
+    padding: 10px;
+    min-height: 100px;
+    font-family: inherit;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    border-bottom: 2px solid #4a6991;
+}
+
+/* Options Grid (Question 2) */
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    color: #4a6991;
+}
+
+.option-item {
+    border: 1px dotted #4a6991;
+    width: 180%;
+    border-radius: 4px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #4a6991;
+}
+
+.option-item:hover {
+    background-color: #f5f7fa;
+}
+
+.radio-circle {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #dcdfe6;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Range Slider (Question 3) */
+.slider-container {
+    padding: 20px 0;
+}
+
+.slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.currency-label {
+    border: 1px solid #4a6991;
+    color: #4a6991;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+input[type="range"] {
+    width: 100%;
+    appearance: none;
+    height: 4px;
+    background: #e4e7ed;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: white;
+    border: 2px solid #4a6991;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    color: #c0c4cc;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Submit Button */
+.submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn-submit {
+    background-color: #4a6991;
+    color: white;
+    border: none;
+    padding: 12px 80px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #385273;
+}
+
+
+
+
+/* Tô màu cho phần đã kéo qua (Progress bar) */
+input[type="range"] {
+    background: linear-gradient(to right, #4a6991 0%, #4a6991 var(--value, 0%), #e4e7ed var(--value, 0%), #e4e7ed 100%);
+    appearance: none;
+    height: 6px;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Làm cho con trỏ tròn và đẹp hơn */
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 2px solid #4a6991;
+    border-radius: 50%;
+    cursor: pointer;
+}

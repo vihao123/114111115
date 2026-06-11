@@ -1,0 +1,146 @@
+/* === CÀI ĐẶT CHUNG === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main {
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+.hero {
+    /* Thay link ảnh dưới đây bằng ảnh phong cảnh bạn thích */
+    background-image: url('img/1.avif');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Lớp phủ mờ cho Banner để chữ dễ đọc hơn */
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 160, 233, 0.3);
+    z-index: 1;
+}
+
+.hero h1, .hero h2 {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+
+.portfolio-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;        /* Cho phép xuống hàng */
+    justify-content: space-between;
+    gap: 30px;              /* Khoảng cách giữa các ô */
+}
+
+/* Mỗi ô chiếm gần 50% */
+.item {
+    flex: 0 1 calc(50% - 15px);
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Vùng chứa ảnh */
+.imageWrapper {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Vùng chữ đè lên ảnh (Overlay) */
+.imageOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+    padding: 30px 20px 20px 20px;
+    color: white;
+}
+
+.web-url {
+    font-size: 14px;
+    color: #d1d1d1;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.web-title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin: 35px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0px;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: 3px  rgb(231, 231, 231);
+}
