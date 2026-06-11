@@ -1,0 +1,146 @@
+/* ==========================================
+ INDEX.HTML
+   ========================================== */
+
+
+/*phan dau*/
+.homepage-hero-banner {
+    background-color: #f4fbf7; 
+    padding: 60px 20px;        
+    border-bottom: 2px dashed #198754; 
+    margin-bottom: 40px;
+}
+
+/* tieu de  */
+.homepage-hero-banner .hero-title {
+    color: #198754;            
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 2px;       
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05); 
+}
+
+/* mo ta duoi tieu de*/
+.homepage-hero-banner .hero-subtitle {
+    color: #555555;         
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* gach duoi tieu de */
+.homepage-hero-banner .hero-divider {
+    width: 80px;
+    height: 3px;
+    background-color: orange;  
+    margin: 20px auto 0 auto;  
+}
+
+
+
+/*do boc nut bam*/
+.my-custom-nav {
+    background-color: #198754; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+
+
+/* Khung boc anh */
+.index-carousel {
+    border: 3px solid #6fbb9a; 
+    padding: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* anh*/
+.index-carousel .carousel-item img {
+    height: 380px;        
+    object-fit: cover;     
+}
+
+/* khoi van ban */
+.index-intro-text {
+    padding: 10px 20px;
+}
+
+.index-intro-text h2 {
+    font-size: 28px;
+    border-bottom: 2px solid orange; 
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Định dạng các đoạn văn bản */
+.index-intro-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444444;
+    text-align: justify;
+}
+
+
+.btn-success {
+    color: #fff;
+    background-color: #198754; 
+    border-color: #198754;
+}
+
+
+/* ==========================================
+ ABOUT.HTML
+   ========================================== */
+
+
+about-simple-box {
+    background: #ffffff;
+    border: 2px solid orange;
+    padding: 20px;
+    width: 100%;
+}
+
+/* ==========================================
+PORTFOLIO.HTML
+   ========================================== */
+
+/* Tong the*/
+.custom-portfolio-card {
+    background-color: #ffffff;
+    border: 2px solid orange; /* Viền cam thô sơ giống trang About */
+    border-radius: 20px;/* Xóa bỏ bo góc tròn của Bootstrap để tạo cảm giác phẳng dẹt */
+}
+
+/* card */
+.custom-portfolio-card .portfolio-card-img {
+    height: 220px;          
+    object-fit: cover;        
+    border-bottom: 2px solid orange; 
+    border-radius: 20px 20px 0px 0px;
+}
+
+/* Phần thân chứa chữ của Card */
+.custom-portfolio-card .card-body {
+    padding: 20px;
+    object-fit: cover;
+}
+
+/* san pham*/
+.custom-portfolio-card .card-title {
+    color: #198754;         
+    font-size: 18px;
+    border-bottom: 1px dashed #ced4da; 
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+/* doan mo ta san pham*/
+.custom-portfolio-card .card-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444444;
+    text-align: justify;    
+}
+
+

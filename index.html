@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁（Home）</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark my-custom-nav px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold custom-brand" href="index.html" href="index.html">我的網頁空間</a>
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active fw-bold " href="index.html">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">關於我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">作品集</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">技能介紹</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">聯絡我</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="homepage-hero-banner">
+        <div class="container text-center">
+            <h1 class="hero-title">Home</h1>
+            <p class="hero-subtitle">歡迎光臨我的個人網頁空間</p>
+            <div class="hero-divider"></div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div id="contents">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="carouselExampleControlsNoTouching" class="carousel slide index-carousel"
+                        data-bs-touch="false" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/1.jpg" class="d-block w-100" alt="照片一">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/2.jpg" class="d-block w-100" alt="照片二">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/3.jpg" class="d-block w-100" alt="照片三">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="index-intro-text">
+                        <h2 class="text-success fw-bold">你好，我是李戴偉豪！</h2>
+                        <p class="mt-3">我是李戴偉豪，目前專注於資訊科技、人工智慧與網頁開發領域。</p>
+                        <p>我相信科技能改變生活，而程式設計則是將創意轉化為現實的重要工具。透過不斷學習與實作，我希望能成為一位具備創新能力與專業技術的軟體工程師。</p>
+                        <p>在這裡, 我將會介紹關於我的學習經歷、專業技能以及個人作品集，歡迎點擊上方導覽列參觀！</p>
+                        <a href="about.html" class="btn btn-success mt-2">關於我</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

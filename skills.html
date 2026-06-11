@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技能介紹 - 我的網頁空間</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark my-custom-nav px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold custom-brand" href="index.html">我的網頁空間</a>
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">關於我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">作品集</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="skills.html">技能介紹</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">聯絡我</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="homepage-hero-banner">
+        <div class="container text-center">
+            <h1 class="hero-title">技能介紹 / My Skills</h1>
+            <p class="hero-subtitle">這裡展示了我目前所掌握的專業技術、工具應用與核心能力</p>
+            <div class="hero-divider"></div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div id="contents" class="p-4">
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                
+                <div class="col">
+                    <div class="card h-100 custom-skills-card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">HTML5</h5>
+                            <p class="card-text">熟練掌握 HTML5 語意標籤（如 header, nav, main, footer），能夠獨立建立結構清晰、符合 W3C 標準的網頁基礎骨架。</p>
+                            
+                            <div class="skill-progress-wrapper mt-auto">
+                                <div class="d-flex justify-content-between mb-1 small">
+                                    <span>熟練度</span>
+                                    <span class="fw-bold text-success">55%</span>
+                                </div>
+                                <div class="progress custom-progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 custom-skills-card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">CSS3</h5>
+                            <p class="card-text">具備編寫 CSS3 樣式的能力。包含文字排版、區塊邊距（Margin/Padding）、網頁色彩搭配、以及傳統與客製化邊框的設計應用。</p>
+                            
+                            <div class="skill-progress-wrapper mt-auto">
+                                <div class="d-flex justify-content-between mb-1 small">
+                                    <span>熟練度</span>
+                                    <span class="fw-bold text-warning">60%</span>
+                                </div>
+                                <div class="progress custom-progress">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 custom-skills-card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Bootstrap</h5>
+                            <p class="card-text">能夠靈活運用 Bootstrap 的網格系統（Grid System）進行多欄位排版，並結合 Card、Navbar 与 Progress 等組件加速響應式網頁的開發。</p>
+                            
+                            <div class="skill-progress-wrapper mt-auto">
+                                <div class="d-flex justify-content-between mb-1 small">
+                                    <span>熟練度</span>
+                                    <span class="fw-bold text-danger">75%</span>
+                                </div>
+                                <div class="progress custom-progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> </div>
+    </main>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
